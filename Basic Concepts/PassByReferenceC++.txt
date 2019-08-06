@@ -1,0 +1,16 @@
+#include <iostream>
+
+using namespace std;
+
+void foo(int &value){
+    value =8;
+}
+int main()
+{
+  int value = 2;
+  cout << value // this output 2 the local variable
+  foo(value);
+
+  cout << value; // this output 8 the local variable of foo();
+
+}

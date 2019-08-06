@@ -1,0 +1,16 @@
+#include <iostream>
+
+using namespace std;
+
+void foo( int *value){ //passing by address
+    *value =8;
+
+}
+int main()
+{
+  int value = 2;
+  foo(&value);
+
+  cout << value;
+
+}
