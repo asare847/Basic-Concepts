@@ -16,7 +16,7 @@ struct Node*head =NULL; // assign the Head to null because it's empty now
 
 /*insertion function */
 void Insert(int x){
-    Node* temp = (Node*)malloc(sizeof (struct Node));
+    Node* temp = (Node*)malloc(sizeof (struct Node)); // assigning size of node on dynamic memory
     (*temp).data = x;
     (*temp).link = NULL;
     if(head !=NULL){
