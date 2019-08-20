@@ -4,14 +4,17 @@
        Date : 20-08-2019
 */
 #include <sdio.h>
-
+/*
+Declaring the struct
+*/
 struct Node{
-    int data;
-    struct Node* link;
+    int data;  // the data part
+    struct Node* link; // pointer to node 
 };
-struct Node*head =NULL;
 
+struct Node*head =NULL; // assign the Head to null because it's empty now
 
+/*insertion function */
 void Insert(int x){
     Node* temp = (Node*)malloc(sizeof (struct Node));
     (*temp).data = x;
@@ -22,6 +25,7 @@ void Insert(int x){
     }
 }
 
+/*Read the inserted data function */
 void Print(){
   struct Node*temp = head;
   while(temp!=NULL){
