@@ -1,5 +1,6 @@
 /*
        Author:  Gideon Asare
+       Email: gideonasare847@outlook.com
        Topic: linkedlist implemetation in C (inserting at the beginning of the list)
        Date : 20-08-2019
 */
