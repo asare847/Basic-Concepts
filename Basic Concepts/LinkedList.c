@@ -4,7 +4,7 @@
        Topic: linkedlist implemetation in C (inserting at the beginning of the list)
        Date : 20-08-2019
 */
-#include <sdio.h>
+#include <stdio.h>
 /*
 Declaring the struct
 */
