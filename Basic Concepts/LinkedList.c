@@ -19,11 +19,7 @@ struct Node*head =NULL; // assign the Head to null because it's empty now
 void Insert(int x){
     Node* temp = (Node*)malloc(sizeof (struct Node)); // assigning size of node on dynamic memory
     (*temp).data = x;
-    (*temp).link = NULL;
-    if(head !=NULL){
-        (*temp).link = head;
-        head = temp;
-    }
+    (*temp).link = head;
 }
 
 /*Read the inserted data function */
