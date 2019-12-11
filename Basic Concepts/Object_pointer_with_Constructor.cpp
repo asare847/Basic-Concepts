@@ -33,7 +33,7 @@ int main()
    Human human[4] = {Human(6),Human(7),Human(8),Human(9)}; // Array
    Human *hptr;  //introducing the pointer
    hptr = human; //assigning the pointer to the object
-
+   // this-> pointer could be used instead 
 
    for(int x = 0; x<4; x++){
     cout << (hptr+x)->getAge() << endl; // iterating the array doing some pointer arithmetics
