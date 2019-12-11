@@ -5,21 +5,21 @@
        Date : 20-08-2019
 */
 #include <stdio.h>
-/*
-Declaring the struct
-*/
+#include <stdlib.h>
+/*Declaring the struct*/
+
 struct Node{
     int data;  // the data part
-    struct Node* link; // pointer to node 
+    struct Node* next; // pointer to node 
 };
 
 struct Node*head; // assign the Head to null because it's empty now
 
 /*insertion function */
 void Insert(int x){
-    Node* temp = (Node*)malloc(sizeof (struct Node)); // assigning size of node on dynamic memory
+    struct Node*temp = (struct Node*)malloc(sizeof (struct Node)); // assigning size of node on dynamic memory
     (*temp).data = x;
-    (*temp).link = head;
+    (*temp).next = head;
 }
 
 /*Read the inserted data function */
@@ -27,7 +27,7 @@ void Print(){
   struct Node*temp = head;
   while(temp!=NULL){
       printf("%d ",(*temp).data);
-      temp = (*temp).link;
+      temp = (*temp).next;
   }
 }
 
