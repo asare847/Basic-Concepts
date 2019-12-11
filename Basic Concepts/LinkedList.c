@@ -20,6 +20,7 @@ void Insert(int x){
     struct Node*temp = (struct Node*)malloc(sizeof (struct Node)); // assigning size of node on dynamic memory
     (*temp).data = x;
     (*temp).next = head;
+      head = temp;
 }
 
 /*Read the inserted data function */
