@@ -33,16 +33,11 @@ void Print(){
 
 int main()
 {
-    int lengthoflinkedlist;
-    int elementsoflist;
-    printf("Enter the length  of linked list\t:");
-    scanf("%d",&lengthoflinkedlist);
-    int i;
-    for(i=0; i<lengthoflinkedlist;i++){
-    printf("Enter some elements of  the  list\t:");
-    scanf("%d",&elementsoflist);
-    Insert(elementsoflist);
+   
+    Insert(4);
+    Insert(5);
+    Insert(9);
     Print();
-    }
+    
     return 0;
 }
