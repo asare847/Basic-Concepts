@@ -23,7 +23,7 @@ void Insert(int x){
       head = temp;
 }
 
-/*Read the inserted data function */
+/*Read / iterating the inserted data function */
 void Print(){
   struct Node*temp = head;
   while(temp!=NULL){
