@@ -13,7 +13,7 @@ struct Node{
     struct Node* link; // pointer to node 
 };
 
-struct Node*head =NULL; // assign the Head to null because it's empty now
+struct Node*head; // assign the Head to null because it's empty now
 
 /*insertion function */
 void Insert(int x){
