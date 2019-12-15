@@ -11,6 +11,6 @@ int main()
   cout << value // this output 2 the local variable
   foo(value);
 
-  cout << value; // this output 8 the local variable of foo();
+  cout << value; // this output 8 the local variable of  function foo();
 
 }
