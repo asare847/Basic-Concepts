@@ -33,7 +33,10 @@ int main()
       Human *hptr;
       hptr = human;
    /*  */ 
+    
+    
    (hptr+0)->set_age(6);//setting at the index[0]
+    //in modern C++ we can just write this->set_age(6)
    (hptr+1)->set_age(7);//setting at the index[1]
    (hptr+2)->set_age(8);//setting at the index[2]
    (hptr+3)->set_age(9);//setting at the index[3]
